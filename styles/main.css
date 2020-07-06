@@ -1,0 +1,81 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+    color: black;
+    text-align: center;
+    background-color: black;
+}
+
+#scene-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#infoText {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    color: lightseagreen;
+    display: none;
+    font-size: 1.5rem;
+    font-family: 'Quicksand', 'Cinzel', Helvetica, sans-serif;
+}
+
+a {
+    color: hotpink;
+}
+
+.btn {
+    border: none;
+    background-color: inherit;
+    padding: 0px 0px;
+    font-size: 2rem;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .btn-secondary {
+    border: none;
+    background-color: transparent;
+    padding: 0px 0px;
+    font-size: 2rem;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle{
+      color:white;
+      background-color: transparent;
+      border-color: transparent;
+      border: none;
+  }
+  .btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }
+  
+  /* On mouse-over */
+  .btn:hover {background:transparent;}
+  
+  .success {color: green;}
+  .info {color: dodgerblue;}
+  .warning {color: orange;}
+  .danger {color: red;}
+  .default {color: black;}
+
+  .dropdown-item:hover {
+    background-color: rgba(0,0,0,0.5);
+    background-image: none;
+}
+
+.dropdown-menu .show {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.dropdown-item {
+    background-color: rgba(0,0,0,0.7);
+}
+.dropdown-toggle::after {
+    content: none;
+}

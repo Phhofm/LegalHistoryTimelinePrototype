@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",                  // path to output directory
+    "sourceMap": true,                    // allow sourcemap support
+    "module": "es6",                      // specify module code generation
+    "jsx": "react",
+    "target": "es6",                      // specify ECMAScript target version
+    "allowJs": true,                      // allow a partial TypeScript and JavaScript codebase
+    "checkJs" : false,                    // report errors in .js files
+    "moduleResolution": "Node",           // for imports to be imported accorsing to node.js (node_modules folder)
+    "resolveJsonModule": true,            // so we can import font because .json file
+    "allowSyntheticDefaultImports": true, // for font again
+    "removeComments": true,
+    "noErrorTruncation": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true                        // enable all strict type checking options. Enabling --strict enables --noImplicitAny, --noImplicitThis, --alwaysStrict, --strictBindCallApply, --strictNullChecks, --strictFunctionTypes and --strictPropertyInitialization.
+  },
+  "include": [
+    "./src/"
+  ]
+}

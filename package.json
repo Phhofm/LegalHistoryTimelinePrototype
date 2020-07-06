@@ -1,0 +1,50 @@
+{
+  "name": "TimelinePrototype",
+  "version": "0.1.0",
+  "description": "Prototype for a Visualization Concept of the legal timeline history, developed by assignment of RWI @ University of Zurich by Philip Hofmann",
+  "private": true,
+  "dependencies": {
+    "@types/bootstrap": "^4.5.0",
+    "@types/jquery": "^3.3.38",
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "particles.js": "^2.0.0",
+    "perlin-simplex": "0.0.3",
+    "popper.js": "^1.16.0",
+    "spin.js": "^4.1.0",
+    "three": "^0.105.2"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.5.3",
+    "csv-loader": "^3.0.3",
+    "file-loader": "^4.3.0",
+    "html-webpack-plugin": "^3.2.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.9.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2",
+    "webpack-obfuscator": "^0.27.4",
+    "xml-loader": "^1.2.1"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phhofm/JSHistoryTimeline.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Phhofm/JSHistoryTimeline/issues"
+  },
+  "homepage": "https://github.com/Phhofm/JSHistoryTimeline#readme"
+}

@@ -1,0 +1,32 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+    text-align: center;
+    }
+
+#scene-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.modal .modal-dialog {
+    /*font-size:small;*/
+    text-align:left;
+}
+
+.modal .modal-content { /* style modal content */
+    overflow-x:hidden;
+    background-color:rgba(0,0,0,0); /* transparent background so it does not look like generic bootstrap modal */
+   /* color: white; /* make text white so it contrasts with modal backdrop and dark theme of the app */
+}
+
+.img-thumbnail{
+    padding: 0rem;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    width:100%;
+    height:auto;
+}

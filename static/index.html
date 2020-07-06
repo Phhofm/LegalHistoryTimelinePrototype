@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Legal History Timeline</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel|Quicksand&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+	<div id="infoControls" style="position: fixed; left: 10px; top: 5px; z-index: 50; color:azure; font-size:2rem;">
+		Antike -800 -500</div>
+	<div id="infoText"></div> <!-- This div holds the short Text when a sphere gets clicked-->
+	<div id="scene-container">
+		<!-- This div holds the Scene for TimeLine-->
+	</div>
+
+	<!-- webpack-generated -->
+
+	<script type="x-shader/x-vertex" id="vertexshader">
+			attribute float scale;
+			void main() {
+				vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+				gl_PointSize = scale * ( 300.0 / - mvPosition.z );
+				gl_Position = projectionMatrix * mvPosition;
+			}
+</script>
+
+	<script type="x-shader/x-fragment" id="fragmentshader">
+			uniform vec3 color;
+			void main() {
+				if ( length( gl_PointCoord - vec2( 0.5, 0.5 ) ) > 0.475 ) discard;
+				gl_FragColor = vec4( color, 1.0 );
+			}
+</script>
+
+<script type="text/javascript" src="timeline.js"></script></body>
+
+</html>
