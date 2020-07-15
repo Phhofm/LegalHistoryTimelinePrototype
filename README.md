@@ -8,6 +8,12 @@ Three.js is a cross-browser JavaScript library and application programming inter
 
 This project was meant for students or interested individuals to explore an interactive timeline visually and which development was requested and supported by Antonia Hartmann from chair
 
+Check out this version at:
+https://phhofm.github.io/LegalHistoryTimelinePrototype/static/
+
+Check out the documentation at
+https://phhofm.github.io/LegalHistoryTimelinePrototype/docs/
+
 ---
 
 Developer notes
